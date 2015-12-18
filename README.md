@@ -5,9 +5,30 @@
 
 ## Actionscript
 
-For compiling try to use Flex SDK
+For compiling try to use [Flex SDK](http://flex.apache.org/).
 
-Might need a `crossdomain.xml` file in the root of the server:
+```sh
+find . -maxdepth 3 -type f -name '*.as' -printf '\n%h\n' \
+ -exec sh -c 'mxmlc -target-player=11.1.0 {}' ';'
+```
+
+Make sure to have any player version specific SWC files available, copied as
+`frameworks/libs/player/<version.major>.<version.minor>/playerglobal.swc`, and
+can be downloaded from:
+
+```
+http://download.macromedia.com/get/flashplayer/installers/archive/playerglobal/playerglobal10_2.swc
+http://download.macromedia.com/get/flashplayer/installers/archive/playerglobal/playerglobal10_3.swc
+http://download.macromedia.com/get/flashplayer/installers/archive/playerglobal/playerglobal11_1.swc
+http://download.macromedia.com/get/flashplayer/installers/archive/playerglobal/playerglobal12_0.swc
+http://download.macromedia.com/get/flashplayer/installers/archive/playerglobal/playerglobal13_0.swc
+```
+
+Sometimes there might be a need to get a version which is not yet released, which
+are usually available at
+[Adobe Labs](http://labs.adobe.com/technologies/flashruntimes/flashplayer/).
+
+Might need a `crossdomain.xml` file in the root of the web server:
 
 ```xml
 <?xml version="1.0"?>
@@ -19,7 +40,7 @@ Might need a `crossdomain.xml` file in the root of the server:
 </cross-domain-policy>
 ```
 
-Colors used in the examples are mostly from [Kuler: shark wrangler](http://kuler.adobe.com/#themeID/425255).
+Colors used in the examples are mostly from [Kuler: shark wrangler](https://color.adobe.com/shark-wrangler-color-theme-425255/).
 
 ```
 0x042836 background
