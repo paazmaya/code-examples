@@ -23,11 +23,11 @@ package {
         private var arrowLowerDown:Boolean = false;
         private var arrowDownTimer:Timer;
 
-        [Embed(source = 'ContentScrollSymbols.swc', symbol = 'Arrow')]
+        [Embed(source = 'ContentScrollSymbols.swf', symbol = 'Arrow')]
         private var Arrow:Class;
-        [Embed(source = 'ContentScrollSymbols.swc', symbol = 'Bar')]
+        [Embed(source = 'ContentScrollSymbols.swf', symbol = 'Bar')]
         private var Bar:Class;
-        [Embed(source = 'ContentScrollSymbols.swc', symbol = 'Slider')]
+        [Embed(source = 'ContentScrollSymbols.swf', symbol = 'Slider')]
         private var Slider:Class;
 
         public function ContentScroll() {
