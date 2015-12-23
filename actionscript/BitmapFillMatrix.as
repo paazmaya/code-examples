@@ -3,7 +3,7 @@
  */
 package
 {
-    import flash.display.*;
+  import flash.display.*;
 	import flash.events.*;
 	import flash.geom.*;
 	import flash.text.TextField;
@@ -36,8 +36,8 @@ package
 		[Embed(source = "2448433179_08c51ff095.jpg", mimeType = "image/jpeg")]
 		private var Wugies:Class;
 
-        public function BitmapFillMatrix()
-        {
+    public function BitmapFillMatrix()
+    {
 			stage.align = StageAlign.TOP_LEFT;
 			stage.scaleMode = StageScaleMode.NO_SCALE;
 

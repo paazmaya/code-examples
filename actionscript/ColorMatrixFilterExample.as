@@ -3,21 +3,22 @@
  */
 package
 {
-    import flash.display.*;
-    import flash.events.Event;
-    import flash.events.IOErrorEvent;
-    import flash.filters.ColorMatrixFilter;
+	import flash.display.*;
+	import flash.events.Event;
+	import flash.events.IOErrorEvent;
+	import flash.filters.ColorMatrixFilter;
 	import flash.geom.ColorTransform;
-    import flash.net.URLRequest;
+	import flash.net.URLRequest;
 
-	[SWF(backgroundColor = '0x042836', frameRate = '33', width = '880', height = '500')]
+	[SWF(backgroundColor = '0x042836', frameRate = '33',
+		width = '880', height = '500')]
 
 	/**
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
 	 * @see http://www.paazmaya.fi
 	 */
-    public class ColorMatrixFilterExample extends Sprite
+  public class ColorMatrixFilterExample extends Sprite
 	{
 		private var _original:Bitmap;
 
@@ -67,7 +68,7 @@ package
 		[Embed(source = "Korkeasaari2008-07-01_059.jpg", mimeType = "image/jpeg")]
 		private var Pollot:Class;
 
-        public function ColorMatrixFilterExample()
+    public function ColorMatrixFilterExample()
 		{
 			stage.align = StageAlign.TOP_LEFT;
 			stage.scaleMode = StageScaleMode.NO_SCALE;
@@ -103,6 +104,6 @@ package
 
 				bmj.transform.colorTransform = _transforms[j];
 			}
-        }
     }
+  }
 }

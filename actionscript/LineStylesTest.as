@@ -3,7 +3,7 @@
  */
 package
 {
-    import flash.display.*;
+  import flash.display.*;
 	import flash.events.*;
 	import flash.ui.Keyboard;
 	import flash.text.*;
@@ -45,7 +45,7 @@ package
 		private var _miter:Number = 8;
 		private var _field:TextField;
 
-        public function LineStylesTest()
+    public function LineStylesTest()
 		{
 			stage.align = StageAlign.TOP_LEFT;
 			stage.scaleMode = StageScaleMode.NO_SCALE;
@@ -115,7 +115,7 @@ package
 
 		private function createShape(lineScale:String, caps:String, joint:String, miter:Number = 10):Sprite
 		{
-            var sp:Sprite = new Sprite();
+      var sp:Sprite = new Sprite();
 			sp.name = "LineScaleMode: " + lineScale + "\nCapsStyle: " + caps + "\nJointStyle: " + joint + "\nMiter: " + miter.toString();
 			sp.addEventListener(MouseEvent.MOUSE_OVER, onMouse);
 			sp.addEventListener(MouseEvent.MOUSE_OUT, onMouse);
@@ -124,12 +124,12 @@ package
 			var gra:Graphics = sp.graphics;
 			gra.lineStyle(8, 0x121212, 1, false, lineScale, caps, joint, miter);
 			gra.moveTo(_width / 2, 0);
-            gra.lineTo(_width, _width / 2);
-            gra.lineTo(0, _width / 2);
-            gra.lineTo(_width / 2, 0);
+      gra.lineTo(_width, _width / 2);
+      gra.lineTo(0, _width / 2);
+      gra.lineTo(_width / 2, 0);
 
-            return sp;
-        }
+      return sp;
+    }
 
 		private function removeChildren():void
 		{
