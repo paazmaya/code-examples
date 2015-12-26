@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flash version="15.0" build="d179" platform="MAC" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="Arrow" mod="1450826119100" >
+        <def id="Arrow" /> 
+        <dep id="flash.display:MovieClip" type="i" /> 
+        <dep id="AS3" type="n" /> 
+      </script>
+      <script name="Bar" mod="1450826119100" >
+        <def id="Bar" /> 
+        <dep id="flash.display:MovieClip" type="i" /> 
+        <dep id="AS3" type="n" /> 
+      </script>
+      <script name="Slider" mod="1450826119100" >
+        <def id="Slider" /> 
+        <dep id="flash.display:MovieClip" type="i" /> 
+        <dep id="AS3" type="n" /> 
+      </script>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>

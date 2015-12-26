@@ -24,6 +24,9 @@ package
     [SWF(backgroundColor = '0x042836', frameRate = "33", width = "970", height = "500")]
 
 	/**
+     * PaperVision3D example to show how multiple views can be rendered
+     * https://code.google.com/p/papervision3d/
+     *
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
 	 * @see http://www.paazmaya.fi

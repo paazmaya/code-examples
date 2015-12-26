@@ -7,9 +7,20 @@
 
 For compiling try to use [Flex SDK](http://flex.apache.org/).
 
+Examples located in the `coordyexamples` directory require
+[the `coordy` library](https://github.com/somerandomdude/coordy) to be available.
+
+Examples located in the `gsexamples` directory require
+[the `GreenSock-AS3` library](https://github.com/greensock/GreenSock-AS3) to be available.
+
+Examples located in the `xiffexamples` directory require
+[the `XIFF` library](https://github.com/igniterealtime/XIFF) to be available.
+
+In addition to the above, few examples need the [PaperVision3D library](https://code.google.com/p/papervision3d/)
+
 ```sh
 find . -maxdepth 3 -type f -name '*.as' -printf '\n%h\n' \
- -exec sh -c 'mxmlc -target-player=11.1.0 {}' ';'
+ -exec sh -c 'mxmlc -target-player=11.1.0 -source-path=. {}' ';'
 ```
 
 Make sure to have any player version specific SWC files available, copied as

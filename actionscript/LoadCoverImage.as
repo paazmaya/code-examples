@@ -3,8 +3,8 @@
  */
 package
 {
-    import flash.display.*;
-    import flash.events.*;
+  import flash.display.*;
+  import flash.events.*;
 	import flash.media.*;
 	import flash.net.*;
 	import flash.ui.Keyboard;
