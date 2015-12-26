@@ -3,7 +3,9 @@
 > Code examples originally posted at paazmaya.fi or its predecessors
 
 
-## Actionscript
+## [Actionscript](./actionscript/)
+
+[Stories tagged with `actionscript` at paazmaya.fi](http://www.paazmaya.fi/tag-actionscript).
 
 For compiling try to use [Flex SDK](http://flex.apache.org/).
 
@@ -64,9 +66,17 @@ Colors used in the examples are mostly from [Kuler: shark wrangler](https://colo
 ```
 
 
+## [C++, Qt and QML](./cpp-qt-qml/)
 
-## JavaScript
+[Stories tagged with `qt` at paazmaya.fi](http://www.paazmaya.fi/tag-qt) and
+[stories tagged with `qml` at paazmaya.fi](http://www.paazmaya.fi/tag-qml).
 
+Some of the QML examples need Qt 4.7 with some experimental plugins from Qt Labs (that does not
+exist any more) while others use Qt 5, but have no been tested after 5.1 came out.
+
+## [JavaScript](./javascript/)
+
+[Stories tagged with `javascript` at paazmaya.fi](http://www.paazmaya.fi/tag-javascript).
 
 ## License
 
