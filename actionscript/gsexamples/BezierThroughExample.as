@@ -18,7 +18,7 @@ package gsexamples
 	 * An example of the usage of the BezierPlugin plugin with the random control points.
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi
+	 * @see http://paazmaya.fi
 	 */
     public class BezierThroughExample extends Sprite
 	{

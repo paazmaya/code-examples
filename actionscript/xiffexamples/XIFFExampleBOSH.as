@@ -31,7 +31,7 @@ package
 	 *
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi/xiff-example-9-bosh-connection
+	 * @see http://paazmaya.fi/xiff-example-9-bosh-connection
 	 */
 	public class XIFFExampleBOSH extends Sprite
 	{

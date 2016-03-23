@@ -30,7 +30,7 @@ package
 	 * with statistics comparison to non compressed.
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi/xiff-finally-supports-stream-compression
+	 * @see http://paazmaya.fi/xiff-finally-supports-stream-compression
 	 */
 	public class XIFFExampleStreamCompression extends Sprite
 	{

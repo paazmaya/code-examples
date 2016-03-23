@@ -26,7 +26,7 @@ package
 	 * Example of using Software Version Extension to see which clients are used by the people in roster.
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi/xiff-has-now-support-for-software-version-extension
+	 * @see http://paazmaya.fi/xiff-has-now-support-for-software-version-extension
 	 */
   public class XIFFExampleSoftwareVersion extends Sprite
 	{

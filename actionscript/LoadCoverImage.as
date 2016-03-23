@@ -17,11 +17,11 @@ package
 	 * An example of how to retrieve meta data and a cover image if available.
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi
+	 * @see http://paazmaya.fi
 	 */
     public class LoadCoverImage extends Sprite
 	{
-		private const MEDIA:String = "http://www.paazmaya.fidata/Disturbed-Criminal.mp4";
+		private const MEDIA:String = "http://paazmaya.fidata/Disturbed-Criminal.mp4";
 
 		private var _connection:NetConnection;
 		private var _stream:NetStream;

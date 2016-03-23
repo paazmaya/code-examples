@@ -21,7 +21,7 @@ package
 	 * Multi user chat invitations
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi/xiff-chat-part-4-invitations
+	 * @see http://paazmaya.fi/xiff-chat-part-4-invitations
 	 */
 	public class XIFFExampleRoomInvitations extends Sprite
 	{

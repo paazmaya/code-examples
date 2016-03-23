@@ -20,7 +20,7 @@ package
 	 * Testing TweenLite by passing on balls at the screen.
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi
+	 * @see http://paazmaya.fi
 	 */
 	public class TweenLiteTestBalls extends Sprite
 	{

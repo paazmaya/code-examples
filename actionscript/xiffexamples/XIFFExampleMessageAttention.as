@@ -26,7 +26,7 @@ package
 	 *
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi/xiff-has-now-support-for-xep-0224-attention
+	 * @see http://paazmaya.fi/xiff-has-now-support-for-xep-0224-attention
 	 */
 	public class XIFFExampleMessageAttention extends Sprite
 	{

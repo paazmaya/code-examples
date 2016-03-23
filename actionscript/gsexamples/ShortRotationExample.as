@@ -17,7 +17,7 @@ package gsexamples
 	 * An example of the usage of the ShortRotation plugin to rotate the shorter trip.
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi
+	 * @see http://paazmaya.fi
 	 */
     public class ShortRotationExample extends Sprite
 	{

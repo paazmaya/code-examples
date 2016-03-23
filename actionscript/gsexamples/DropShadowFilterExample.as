@@ -35,7 +35,7 @@ package gsexamples
 	 * </ul>
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi
+	 * @see http://paazmaya.fi
 	 */
     public class DropShadowFilterExample extends Sprite
 	{

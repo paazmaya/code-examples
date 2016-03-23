@@ -20,7 +20,7 @@ package
 	 * Simple example of an anonymous access to a XMPP server
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi/xiff-chat-part-1
+	 * @see http://paazmaya.fi/xiff-chat-part-1
 	 */
   public class XIFFExampleAnonymous extends Sprite
 	{

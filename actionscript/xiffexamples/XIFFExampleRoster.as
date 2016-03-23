@@ -25,7 +25,7 @@ package
 	 * Example of roster usage
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi/xiff-chat-part-2-roster
+	 * @see http://paazmaya.fi/xiff-chat-part-2-roster
 	 */
     public class XIFFExampleRoster extends Sprite
 	{

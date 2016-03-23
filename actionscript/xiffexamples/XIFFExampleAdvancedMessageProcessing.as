@@ -28,7 +28,7 @@ package
 	 *
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi/advanced-message-processing-feature-has-landed-to-xiff
+	 * @see http://paazmaya.fi/advanced-message-processing-feature-has-landed-to-xiff
 	 */
 	public class XIFFExampleAdvancedMessageProcessing extends Sprite
 	{

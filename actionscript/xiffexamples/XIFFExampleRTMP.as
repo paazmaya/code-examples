@@ -25,7 +25,7 @@ package
 	 * Example of roster usage via RTMP connection
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi/
+	 * @see http://paazmaya.fi/
 	 */
     public class XIFFExampleRTMP extends Sprite
 	{

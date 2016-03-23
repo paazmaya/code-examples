@@ -25,7 +25,7 @@ package
 	 * Chat states such as "user is typing..."
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi/xiff-chat-part-5-chat-states
+	 * @see http://paazmaya.fi/xiff-chat-part-5-chat-states
 	 */
 	public class XIFFExampleChatStates extends Sprite
 	{

@@ -18,7 +18,7 @@ package gsexamples
 	 * An example of the usage of the EndArray plugin to change values in an array over time.
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi
+	 * @see http://paazmaya.fi
 	 */
     public class EndArrayExample extends Sprite
 	{

@@ -25,7 +25,7 @@ package
 	 * Multi user chat / room example
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi/xiff-chat-part-3-chat-room
+	 * @see http://paazmaya.fi/xiff-chat-part-3-chat-room
 	 */
     public class XIFFExampleMultiUserChat extends Sprite
 	{

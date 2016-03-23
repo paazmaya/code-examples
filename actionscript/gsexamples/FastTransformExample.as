@@ -18,7 +18,7 @@ package gsexamples
 	 * An example of the usage of the FastTransform plugin to perform better.
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://www.paazmaya.fi
+	 * @see http://paazmaya.fi
 	 */
     public class FastTransformExample extends Sprite
 	{
