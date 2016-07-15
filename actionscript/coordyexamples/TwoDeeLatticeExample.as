@@ -30,7 +30,7 @@ package coordyexamples
 	 *
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://paazmaya.fi
+	 * @see https://paazmaya.fi
 	 */
   public class TwoDeeLatticeExample extends Sprite
 	{

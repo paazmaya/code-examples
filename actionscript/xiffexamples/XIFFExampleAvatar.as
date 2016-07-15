@@ -31,7 +31,7 @@ package
 	 * Avatar image loading from users in roster.
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://paazmaya.fi/xiff-chat-part-6-avatar-image
+	 * @see https://paazmaya.fi/xiff-chat-part-6-avatar-image
 	 */
   public class XIFFExampleAvatar extends Sprite
 	{

@@ -34,7 +34,7 @@ package
 	 * https://github.com/timkurvers/as3-crypto
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://paazmaya.fi/xiff-chat-part-8-gtalk
+	 * @see https://paazmaya.fi/xiff-chat-part-8-gtalk
 	 */
 	public class XIFFExampleGoogleTalk extends Sprite
 	{

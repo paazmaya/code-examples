@@ -19,7 +19,7 @@ package gsexamples
 	 * An example to tint an item and then remove the tint.
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://paazmaya.fi
+	 * @see https://paazmaya.fi
 	 */
     public class TintExample extends Sprite
 	{

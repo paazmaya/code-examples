@@ -70,7 +70,7 @@ package {
 
             var loader:Loader = new Loader();
             loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onLoad);
-            loader.load(new URLRequest("http://paazmaya.fi/icons/square230x230.png"));
+            loader.load(new URLRequest("https://paazmaya.fi/icons/square230x230.png"));
             content.addChild(loader);
 
             slider = new Slider() as Sprite;

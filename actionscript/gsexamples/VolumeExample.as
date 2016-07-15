@@ -20,12 +20,12 @@ package gsexamples
 	 * An example of the usage of the Volume plugin with the random points.
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://paazmaya.fi
+	 * @see https://paazmaya.fi
 	 */
     public class VolumeExample extends Sprite
 	{
 		private const AMOUNT:uint = 25;
-		private const MEDIA:String = "http://paazmaya.fi/data/Dream.Theater-Awake-03-Innocence.Faded.short.mp4";
+		private const MEDIA:String = "https://paazmaya.fi/data/Dream.Theater-Awake-03-Innocence.Faded.short.mp4";
 
 		private var _container:Sprite;
 		private var _follower:Shape;

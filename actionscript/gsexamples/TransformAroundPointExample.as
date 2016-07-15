@@ -22,7 +22,7 @@ package gsexamples
 	 * An example of the usage of the TransformAroundPoint plugin to transform an item.
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://paazmaya.fi
+	 * @see https://paazmaya.fi
 	 */
     public class TransformAroundPointExample extends Sprite
 	{

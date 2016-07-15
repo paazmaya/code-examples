@@ -20,7 +20,7 @@ package gsexamples
 	 * RoundProps requires TweenMax.
 	 * @license http://creativecommons.org/licenses/by-sa/4.0/
 	 * @author Juga Paazmaya
-	 * @see http://paazmaya.fi
+	 * @see https://paazmaya.fi
 	 */
     public class RoundPropsExample extends Sprite
 	{
