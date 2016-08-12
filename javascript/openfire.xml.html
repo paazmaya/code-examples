@@ -1,0 +1,67 @@
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br />
+&lt;jive&gt;<br />
+  &lt;adminConsole&gt;<br />
+    &lt;port&gt;9090&lt;/port&gt;<br />
+    &lt;securePort&gt;9091&lt;/securePort&gt;<br />
+  &lt;/adminConsole&gt;<br />
+  &lt;admin&gt;<br />
+    &lt;authorizedUsernames&gt;admin,jukkap&lt;/authorizedUsernames&gt;<br />
+  &lt;/admin&gt;<br />
+  &lt;locale&gt;en&lt;/locale&gt;<br />
+  &lt;provider&gt;<br />
+    &lt;auth&gt;<br />
+      &lt;className&gt;org.jivesoftware.openfire.auth.JDBCAuthProvider&lt;/className&gt;<br />
+    &lt;/auth&gt;<br />
+    &lt;user&gt;<br />
+      &lt;className&gt;org.jivesoftware.openfire.user.JDBCUserProvider&lt;/className&gt;<br />
+    &lt;/user&gt;<br />
+    &lt;group&gt;<br />
+      &lt;className&gt;org.jivesoftware.openfire.group.JDBCGroupProvider&lt;/className&gt;<br />
+    &lt;/group&gt;<br />
+  &lt;/provider&gt;<br />
+  &lt;connectionProvider&gt;<br />
+    &lt;className&gt;org.jivesoftware.database.DefaultConnectionProvider&lt;/className&gt;<br />
+  &lt;/connectionProvider&gt;<br />
+  &lt;jdbcProvider&gt;<br />
+    &lt;driver&gt;com.mysql.jdbc.Driver&lt;/driver&gt;<br />
+    &lt;connectionString&gt;jdbc:mysql://localhost:3306/tsukabeta?user=tsukabeta&password=tsukabeta&lt;/connectionString&gt;<br />
+  &lt;/jdbcProvider&gt;<br />
+  &lt;jdbcAuthProvider&gt;<br />
+    &lt;passwordSQL&gt;SELECT password FROM users WHERE username=? LIMIT 1&lt;/passwordSQL&gt;<br />
+    &lt;passwordType&gt;sha1&lt;/passwordType&gt;<br />
+  &lt;/jdbcAuthProvider&gt;<br />
+  &lt;jdbcUserProvider&gt;<br />
+    &lt;loadUserSQL&gt;SELECT realname, email FROM users WHERE username = ? LIMIT 1&lt;/loadUserSQL&gt;<br />
+    &lt;userCountSQL&gt;SELECT COUNT(*) FROM users&lt;/userCountSQL&gt;<br />
+    &lt;allUsersSQL&gt;SELECT username FROM users ORDER BY username ASC&lt;/allUsersSQL&gt;<br />
+    &lt;searchSQL&gt;SELECT username FROM users WHERE&lt;/searchSQL&gt;<br />
+    &lt;usernameField&gt;username&lt;/usernameField&gt;<br />
+    &lt;nameField&gt;realname&lt;/nameField&gt;<br />
+    &lt;emailField&gt;email&lt;/emailField&gt;<br />
+  &lt;/jdbcUserProvider&gt;<br />
+  &lt;jdbcGroupProvider&gt;<br />
+    &lt;groupCountSQL&gt;SELECT COUNT(*) FROM groups&lt;/groupCountSQL&gt;<br />
+    &lt;allGroupsSQL&gt;SELECT name FROM groups ORDER BY name ASC&lt;/allGroupsSQL&gt;<br />
+    &lt;userGroupsSQL&gt;SELECT A.name FROM groups A, group_users B, users C WHERE A.id = B.group AND B.user = C.id AND C.username = ?&lt;/userGroupsSQL&gt;<br />
+    &lt;descriptionSQL&gt;SELECT description FROM groups WHERE name = ?&lt;/descriptionSQL&gt;<br />
+    &lt;loadMembersSQL&gt;SELECT A.username FROM users A, group_users B, groups C WHERE C.name = ? AND B.admin = 0 AND A.id = B.user AND B.group = C.id&lt;/loadMembersSQL&gt;<br />
+    &lt;loadAdminsSQL&gt;SELECT A.username FROM users A, group_users B, groups C WHERE C.name = ? AND B.admin = 1 AND A.id = B.user AND B.group = C.id&lt;/loadAdminsSQL&gt;<br />
+  &lt;/jdbcGroupProvider&gt;<br />
+  &lt;database&gt;<br />
+    &lt;defaultProvider&gt;<br />
+      &lt;driver&gt;com.mysql.jdbc.Driver&lt;/driver&gt;<br />
+      &lt;serverURL&gt;jdbc:mysql://localhost:3306/openfire350?characterEncoding=utf8&lt;/serverURL&gt;<br />
+      &lt;username&gt;openfire350&lt;/username&gt;<br />
+      &lt;password&gt;openfire350&lt;/password&gt;<br />
+      &lt;minConnections&gt;5&lt;/minConnections&gt;<br />
+      &lt;maxConnections&gt;15&lt;/maxConnections&gt;<br />
+      &lt;connectionTimeout&gt;1.0&lt;/connectionTimeout&gt;<br />
+    &lt;/defaultProvider&gt;<br />
+  &lt;/database&gt;<br />
+  &lt;setup&gt;true&lt;/setup&gt;<br />
+  &lt;log&gt;<br />
+    &lt;debug&gt;<br />
+      &lt;enabled&gt;true&lt;/enabled&gt;<br />
+    &lt;/debug&gt;<br />
+  &lt;/log&gt;<br />
+&lt;/jive&gt;<br />

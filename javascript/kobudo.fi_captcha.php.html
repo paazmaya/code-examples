@@ -1,0 +1,84 @@
+/********************************************
+
+www.kobudo.fi
+
+ver 1    The whole year of 2007
+
+Jukka Paasonen
+olavic@gmail.com
+
+Create visual confirmation image.
+
+********************************************/
+
+// Default image type is gif. Additionally there are available jpg and png.
+$type = 'gif';
+$width = 140;
+$height = 20;
+$text = strtoupper(substr(md5(time()), 3, rand(2, 5)));
+$font = './stuff/UPCLL.TTF';
+$fontsize = 20;
+
+$_SESSION['captcha'] = $text;
+
+$im = imagecreatetruecolor($width, $height);
+
+// PHP 4 >= 4.3.2, PHP 5
+// int imagecolorallocatealpha ( resource image, int red, int green, int blue, int alpha )
+
+// White for background
+$white  = imagecolorallocatealpha($im, 0xFF, 0xFF, 0xFF, 0);
+// Red for text, black for text shadow
+$red    = imagecolorallocatealpha($im, 0xFF, 0x1D, 0x06, 0);
+$black  = imagecolorallocatealpha($im, 0x02, 0x02, 0x02, 0);
+
+// Ellipse colors
+$colores = array (
+    'nothing',
+    imagecolorallocatealpha($im, 0xFF, 0x9C, 0x06, 60), // Orange
+    imagecolorallocatealpha($im, 0x06, 0x6C, 0xFF, 60), // Blue
+    imagecolorallocatealpha($im, 0x68, 0xFF, 0x06, 60)  // Green
+);
+
+// Background first
+imagefilledrectangle($im, 0, 0, $width - 1, $height - 1, $white);
+
+// bool imagerectangle ( resource image, int x1, int y1, int x2, int y2, int color )
+//imagerectangle($im, 0, 0, $width - 1, $height - 1, $red);
+
+// Draw three ellipses
+for ($i = 1; $i < 4; $i++) {
+    // bool imagefilledellipse ( resource image, int cx, int cy, int width, int height, int color )
+    $ex = rand($width / 5, $width / 3);
+    $ey = rand($height / 0.5, $height / 2);
+    imagefilledellipse($im, $ex * $i, $ey / $i, $width / $i / 2, $height * $i / 2, $colores[$i]);
+}
+// Text with black shadow
+// array imagettftext ( resource image, float size, float angle, int x, int y, int color, string fontfile, string text )
+$x = rand(20, 50);
+$a = rand(-3, 3);
+imagettftext($im, $fontsize, $a, $x, 18, $black, $font, $text);
+imagettftext($im, $fontsize, $a, $x - 1, 17, $red, $font, $text);
+
+// Some tiny blur
+// bool imagefilter ( resource image, int filtertype [, int arg1 [, int arg2 [, int arg3]]] )
+// IMG_FILTER_SMOOTH
+// IMG_FILTER_GAUSSIAN_BLUR
+// IMG_FILTER_SELECTIVE_BLUR
+imagefilter($im, IMG_FILTER_SMOOTH, 8);
+
+imagetruecolortopalette($im, false, 64);
+
+if ($type == 'png') {
+    header('Content-type: image/png');
+    imagepng($im);
+}
+else if ($type == 'jpg') {
+    header('Content-type: image/jpeg');
+    imagejpeg($im);
+}
+else {
+    header('Content-type: image/gif');
+    imagegif($im);
+}
+imagedestroy($im);
