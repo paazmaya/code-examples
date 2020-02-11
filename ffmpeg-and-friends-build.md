@@ -1,11 +1,14 @@
-2013-05-07
+# FFMpeg and friend build commands in 2013-05-07
 
-[general]
+## general
+```sh
 mkdir sources
 cd sources
+```
 
-[libvpx]
-git clone http://git.chromium.org/webm/libvpx.git 
+## libvpx
+```sh
+git clone http://git.chromium.org/webm/libvpx.git
 cd libvpx
 ./configure --prefix=/usr/local/encoding \
 --enable-vp8 \
@@ -14,8 +17,10 @@ make -j4
 sudo make install
 make clean
 cd ..
+```
 
-[x264]
+## x264
+```sh
 git clone git://git.videolan.org/x264.git
 cd x264
 ./configure --prefix=/usr/local/encoding \
@@ -27,8 +32,10 @@ make -j4
 sudo make install
 make distclean
 cd ..
+```
 
-[ffmpeg]
+## ffmpeg
+```sh
 git clone git://git.videolan.org/ffmpeg.git
 cd ffmpeg
 ./configure --prefix=/usr/local/encoding \
@@ -64,11 +71,13 @@ make -j4
 sudo make install
 make distclean
 cd ..
+```
 
 
 
 
 no
+```sh
 --enable-libnut \
 --enable-libopencv \
 --enable-mlib \
@@ -78,17 +87,10 @@ no
 --enable-libxavs \
 --enable-w32threads \
 --enable-x11grab \
+```
 
-
-
-
-
-
-
-
-
-
-[mplayer]
+## mplayer
+```sh
 wget http://mplayerhq.hu/MPlayer/releases/codecs/all-20110131.tar.bz2
 tar jxf all-20110131.tar.bz2
 sudo mv all-20110131 /usr/local/encoding/lib/codecs
@@ -102,8 +104,10 @@ make -j4
 sudo make install
 make distclean
 cd ..
+```
 
-[gpac]
+## gpac
+```sh
 svn co https://gpac.svn.sourceforge.net/svnroot/gpac/trunk/gpac gpac
 cd gpac
 ./configure --prefix=/usr/local/encoding \
@@ -118,9 +122,10 @@ sudo make install
 make distclean
 "/usr/local/encoding/lib" >> /etc/ld.so.conf
 cd ..
+```
 
 
-[encoding format]
+## encoding format
 Audio:
 	HE-AAC (ISO) - http://en.wikipedia.org/wiki/HE-AAC
 
